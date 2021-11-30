@@ -227,7 +227,8 @@ class netmusicplugin(StellarPlayer.IStellarPlayerPlugin):
             {
                 'group':[
                     {'type':'edit','name':'search_edit','label':'搜索','width':0.4},
-                    {'type':'button','name':'搜索','@click':'onSearch','width':80}
+                    {'type':'button','name':'搜索','@click':'onSearch','width':80},
+                    {'type':'label','name':'注释','value':'点击歌手名、歌名为搜索;点击歌曲封面播放'}
                 ],
                 'width':1.0,
                 'height':30
