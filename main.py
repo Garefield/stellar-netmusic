@@ -66,6 +66,8 @@ class netmusicplugin(StellarPlayer.IStellarPlayerPlugin):
         if jsonData['info'] != '成功':
             print(jsonData)
             return results
+        if not ('songResultData' in jsonData):
+            return results
         songdata = jsonData['songResultData']
         results['allnum'] = int(songdata['totalCount'])
         for item in songdata['result']:
